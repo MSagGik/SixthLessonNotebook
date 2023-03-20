@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_library"
+    tools:context=".view.AddNotesActivity">
+
+    <EditText
+        android:id="@+id/title_edit"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape_recyclerview"
+        android:ems="10"
+        android:hint="Введите название заметки"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description_edit"
+        android:layout_width="380dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape_recyclerview"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Введите описание"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_edit" />
+
+    <Button
+        android:id="@+id/add_note"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="14dp"
+        android:text="Создать заметку"
+        android:backgroundTint="#D38329"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
